@@ -4,12 +4,12 @@ setwd("F:/Classification")
 workpath="F:/Classification/"
 
 ######### Ensemble Feature Selection #########
-source("APBEFS.CV.R")
+source("APCES.CV.R")
 
 datapath<-paste(workpath,"Datasets/",sep="")
 datasets=list.files(datapath)
 
-outputpath<-paste(workpath,"APBEFS",sep="")
+outputpath<-paste(workpath,"APCES",sep="")
 if(file.exists(outputpath)==FALSE)dir.create(outputpath)
 
 for(k in 1:7){
